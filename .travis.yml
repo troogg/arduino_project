@@ -6,4 +6,11 @@ sudo: true
 before_script:
 - cd src
 script:
-- generic carro.ino
+- carro.ino
+
+after_success:
+  - echo "success"
+ 
+after_failure:
+  - echo "failure"
+  - kpsewhich tkz-graph.sty
