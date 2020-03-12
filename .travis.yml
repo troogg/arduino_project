@@ -6,7 +6,7 @@ sudo: true
 before_script:
 - cd src
 script:
-- carro.ino
+- c++ carro.ino
 
 after_success:
   - echo "success"
